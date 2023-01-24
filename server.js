@@ -3,6 +3,7 @@ import userRoutes from "./routes/users.js";
 import postRoutes from "./routes/posts.js";
 import commentRoutes from "./routes/comments.js";
 import likeRoutes from "./routes/likes.js";
+import relationshipRoutes from "./routes/relationships.js";
 import authRoutes from "./routes/auth.js";
 import cors from "cors";
 import cookieParser from "cookie-parser";
@@ -52,6 +53,8 @@ app.use('/server/posts', postRoutes);
 app.use('/server/comments', commentRoutes);
 
 app.use('/server/likes', likeRoutes);
+
+app.use('/server/relationships', relationshipRoutes);
 
 app.use('/server/auth', authRoutes)
 
