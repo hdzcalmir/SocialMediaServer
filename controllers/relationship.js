@@ -43,7 +43,7 @@ export const addRelationships = (req, res) => {
         db.query(q, [values], (err, data) => {
             if (err) return res.status(500).json(err);
 
-            return res.status(200).json("User has been unfollowed!");
+            // return res.status(200).json("User has been unfollowed!");
 
         });
 

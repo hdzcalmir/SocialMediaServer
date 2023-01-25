@@ -51,7 +51,7 @@ export const getPosts = (req, res) => {
 
         const values = userId !== undefined ? [userId] : [userInfo.id, userInfo.id];
 
-        console.log(values);
+        // console.log(values);
 
         db.query(q, values, (err, data) => {
             // console.log(err);
